@@ -1,3 +1,5 @@
+# Write a code for creating a calculator..
+
 import MyModule
 print(MyModule.calculator_logo)
 continue_YN = 'y'

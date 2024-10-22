@@ -1,3 +1,5 @@
+# Write a code for developing black jack game
+
 import MyModule, random
 
 def drawCards(card_dict):

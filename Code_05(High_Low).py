@@ -1,3 +1,5 @@
+# Write a python code to guess which celebraty has more followers
+
 import random, MyModule
 
 def playGame(is_game_over):

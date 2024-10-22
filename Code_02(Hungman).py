@@ -1,3 +1,6 @@
+# Write python code for hungman game
+# First the system will choose a random and user need to guess the correct word.
+# User has 6 attempts
 import random
 import MyModule
 print(MyModule.logo)

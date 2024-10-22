@@ -1,3 +1,5 @@
+# Write a python code for developing a coffee machine
+
 MENU = {
     "espresso": {
         "ingredients": {
@@ -31,7 +33,7 @@ RESOURCES = {
 }
 MONEY_EARNED = 0
 def printReport(stock, profit):
-    print(f"Water: {stock["water"]}\nMilk: {stock["milk"]}\nCoffee: {stock["coffee"]}\nMoney: ${profit}")
+    print(f"Water: {stock["water"]}ml\nMilk: {stock["milk"]}ml\nCoffee: {stock["coffee"]}g\nMoney: ${profit}")
 
 def precessCoins(drink):
     print("Please insert coins.")
