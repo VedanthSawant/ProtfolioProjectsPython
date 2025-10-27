@@ -29,6 +29,12 @@ class Snake:
         new_turtle.goto(self.allTurtles[-1].position())
         self.allTurtles.append(new_turtle)
 
+    def resetSnake(self):
+        for eachTurtle in self.allTurtles:
+            eachTurtle.goto(1000, 1000)
+        self.allTurtles.clear()
+        self.createSnake()
+
     def move(self):
         for seg in range(len(self.allTurtles) - 1, 0, -1):
             x_axis = self.allTurtles[seg - 1].xcor()

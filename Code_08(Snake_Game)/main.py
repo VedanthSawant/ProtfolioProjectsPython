@@ -37,13 +37,13 @@ while is_game_on:
     # Detect collision with the wall
     if (snake.allTurtles[0].xcor() > 280 or snake.allTurtles[0].xcor() < -280 or snake.allTurtles[0].ycor() > 280
             or snake.allTurtles[0].ycor() < -280):
-        is_game_on = False
-        scoreboard.game_over()
+        snake.resetSnake()
+        scoreboard.resetScore()
 
     # Detect collision with the body
     for segment in snake.allTurtles[1:]:
         if snake.allTurtles[0].distance(segment) < 5:
-            is_game_on = False
-            scoreboard.game_over()
+            snake.resetSnake()
+            scoreboard.resetScore()
 
 myScreen.exitonclick()
